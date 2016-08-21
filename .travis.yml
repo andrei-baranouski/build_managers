@@ -1,0 +1,13 @@
+language: java
+sudo: false
+install: ant deps
+script: build_all.sh
+                 
+jdk:
+  - oraclejdk8
+  - oraclejdk7
+
+# whitelist
+branches:
+  only:
+    - master
